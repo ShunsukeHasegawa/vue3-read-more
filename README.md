@@ -1,7 +1,13 @@
-# Vue 3 + Vite
+# vue3-read-more
+![GitHub](https://img.shields.io/github/license/ShunsukeHasegawa/vue3-read-more)
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+vue3-read-more is a simple plugin for vue.js
 
-## Recommended IDE Setup
+## NPM
+npm install @lazgram/vue3-read-more --save
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+## Usage
+```js
+import ReadMore from '@lazgram/vue3-read-more'
+Vue.use(ReadMore)
+```
