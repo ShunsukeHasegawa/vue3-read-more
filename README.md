@@ -4,7 +4,9 @@
 vue3-read-more is a simple plugin for vue.js
 
 ## NPM
+```sh
 npm install @lazgram/vue3-read-more --save
+```
 
 ## Usage
 ```js
