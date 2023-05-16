@@ -1,12 +1,18 @@
 {
   "name": "@lazgram/vue3-read-more",
   "private": false,
-  "version": "0.0.0",
+  "version": "0.1.0",
   "type": "module",
   "main": "dist/vue3-read-more.umd.js",
   "module": "dist/vue3-read-more.es.js",
   "files": [
     "dist"
+  ],
+  "keywords": [
+    "vue",
+    "vue3",
+    "vue3-read-more",
+    "read-more"
   ],
   "exports": {
     ".": {
@@ -15,6 +21,11 @@
     },
     "./dist/style.css": "./dist/style.css"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ShunsukeHasegawa/vue3-read-more"
+  },
+  "license": "MIT",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

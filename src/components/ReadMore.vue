@@ -1,6 +1,6 @@
 <template>
   <div class="vue3-read-more" :style="styles">
-    <p>{{ text }}</p>
+    <p><slot></slot></p>
     <label>
       <input type="checkbox" />
       {{ moreText }}
@@ -12,7 +12,6 @@
 export default {
   name: 'read-more',
   props: {
-    text: String,
     moreText: {
       type: String,
       default: 'Read more',
