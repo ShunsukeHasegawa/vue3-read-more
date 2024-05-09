@@ -16,6 +16,7 @@ npm install @lazgram/vue3-read-more --save
 ## Usage
 ```javascript
 import ReadMore from '@lazgram/vue3-read-more'
+import '@lazgram/vue3-read-more/dist/style.css'
 Vue.use(ReadMore)
 ```
 
@@ -30,7 +31,6 @@ Vue.use(ReadMore)
 
 - `rows` - The number of lines displayed in the initial state. The default value is 4.
 - `moreText` - The text displayed on "Read more". The default value is "Read More"
-- `backgroundColor` - The background color of the page. The default value is #FFF.
 
 ## License
 
