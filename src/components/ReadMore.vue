@@ -20,15 +20,12 @@ export default {
       type: Number,
       default: 4,
     },
-    backgroundColor: {
-      type: String,
-      default: '#FFF'
-    }
   },
   setup(props) {
     const styles = {
       '--rows': props.rows,
-      '--background-color': props.backgroundColor,
+      '--gradient-from' : ((props.rows - 2) / props.rows) * 100 + "%",
+      '--gradient-to' : ((props.rows - 1) / props.rows) * 100 + "%",
     };
     return {
       styles,
@@ -60,10 +57,12 @@ export default {
     overflow: hidden;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: var(--rows);
+    mask-image: linear-gradient(rgba(0,0,0,1) var(--gradient-from), transparent var(--gradient-to));
 }
 
 .vue3-read-more:has(:checked) p {
     display: block;
+    mask-image: none;
 }
 
 .vue3-read-more p::after {
@@ -73,7 +72,6 @@ export default {
     bottom: 0;
     width: 100%;
     height: 60px;
-    background: linear-gradient(180deg, hsla(0, 0%, 100%, 0) 0, hsla(0, 0%, 100%, .9) 50%, hsla(0, 0%, 100%, .9) 0, var(--background-color));
     content: '';
 }
 
